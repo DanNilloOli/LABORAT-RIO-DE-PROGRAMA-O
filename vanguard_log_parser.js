@@ -1,17 +1,4 @@
-/**
- * UNIVERSIDADE DE SANTO AMARO (UNISA)
- * PROJETO INTEGRADOR: LABORATÓRIO DE PROGRAMAÇÃO
- * Autor: Danillo Silva de Oliveira
- * Orientador: Prof. Patrick Araújo
- * Estudo de Caso: Vanguard Data Analytics - Extrator e Higienizador de Logs
- * Repositório: https://github.com/DanNilloOli/LABORAT-RIO-DE-PROGRAMA-O
- */
 
-/**
- * Isola e extrai o código identificador delimitado por hifens em uma linha de log.
- * @param {string|null} linhaLog - Cadeia de caracteres bruta recebida pelo módulo.
- * @returns {Object} Estrutura contendo o resultado da validação e os tokens extraídos.
- */
 function extrairCodigoLog(linhaLog) {
     // 1. Validação defensiva contra valores nulos, indefinidos ou strings vazias
     if (linhaLog === null || linhaLog === undefined || typeof linhaLog !== "string" || linhaLog.trim() === "") {
